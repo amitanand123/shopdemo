@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b77ec546-d196-4739-a785-c94b84c3f774" name="tk [LOCAL]" url="http://localhost:8080">
+        <fileTransfer rootFolder="/var/www" accessType="SFTP" host="localhost" port="22" sshConfigId="9063e48f-502d-45b6-b83f-c81cb1c9332a" sshConfig="tk [LOCAL]">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

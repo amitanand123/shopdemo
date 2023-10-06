@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="tk [LOCAL]" deleteMissingItems="true" confirmBeforeUploading="false" confirmBeforeDeletion="false">
+    <option name="confirmBeforeDeletion" value="false" />
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="tk [LOCAL]">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/html/config" local="$PROJECT_DIR$/html/config" web="/" />
+            <mapping deploy="/html/custom" local="$PROJECT_DIR$/html/custom" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/html/custom/plugins/DockwareSamplePlugin" />
+            <excludedPath path="/html/custom/plugins/SwagPlatformDemoData" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

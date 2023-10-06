@@ -1,0 +1,26 @@
+{
+  "name": "tk/plugin-demo",
+  "version": "0.0.3",
+  "description": "ThyssenKrupp demo for new endpoint",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "WBFK",
+      "homepage": "https://wbfk.at",
+      "role": "Manufacturer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TkDemoPlugin\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "TkDemoPlugin\\TkDemoPlugin",
+    "label": {
+      "de-DE": "ThyssenKrupp Demo plugin",
+      "en-GB": "ThyssenKrupp Demo plugin"
+    }
+  }
+}

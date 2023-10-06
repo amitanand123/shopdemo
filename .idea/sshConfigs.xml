@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="localhost" id="9063e48f-502d-45b6-b83f-c81cb1c9332a" port="22" customName="tk [LOCAL]" nameFormat="CUSTOM" username="thkr" useOpenSSHConfig="true">
+        <option name="customName" value="tk [LOCAL]" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

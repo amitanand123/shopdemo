@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+
+  shopware:
+    container_name: "tk"
+
+
+    volumes:
+      - "db_volume:/var/lib/mysql"
+      - "shop_volume:/var/www/html"
+
+    build:
+      context: .
+
+    ports:
+      - "80:80"        # web
+      - "3306:3306"    # SQL
+      - "22:22"        # ssh
+      - "8888:8888"    # Admin Watcher Port
+      - "9999:9999"    # Storefront Watcher Port
+      - "9998:9998"    # Storefront Watcher Port
+
+    networks:
+      - web
+
+    environment:
+      - TZ=Europe/Berlin
+      - PHP_VERSION=8.1
+      - NODE_VERSION=16
+      - XDEBUG_ENABLED=0
+      - SW_TASKS_ENABLED=1
+      - SSH_USER=thkr
+      - SSH_PWD=thkr
+
+volumes:
+  db_volume:
+    driver: local
+  shop_volume:
+    driver: local
+
+networks:
+  web:
+    external: false

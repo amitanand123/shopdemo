@@ -1,0 +1,32 @@
+{
+  "name": "tk/api",
+  "description": "This plugin holds all adaptions existing endpoints and also new endpoints.",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "ThyssenKrupp"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "TkApi\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "TkApi\\TkApi",
+    "copyright": "ThyssenKrupp",
+    "label": {
+      "de-DE": "TkApi",
+      "en-GB": "TkApi"
+    },
+    "description": {
+      "de-DE": "This plugin holds all adaptions existing endpoints and also new endpoints.",
+      "en-GB": "This plugin holds all adaptions existing endpoints and also new endpoints."
+    }
+  }
+}

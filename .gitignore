@@ -1,0 +1,8 @@
+/html/custom/plugins/*
+!/html/custom/plugins/Tk*
+
+# Do not checkin PROD- Enviroment
+/docker/www/html/files/setup/prod.env
+
+# Do not checkin datasources for connecting to remote databases
+.idea/dataSources.xml
