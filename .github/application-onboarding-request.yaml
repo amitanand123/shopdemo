@@ -1,0 +1,47 @@
+
+name: General Application Onboarding Request
+description: For general application onboarding requests .
+title: "General Application Onboarding Request"
+labels: ["app-onboarding-request"]
+assignees:
+  - andy
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the details of your application below. Once submitted, the SPE platform team will review and reach out with any questions.
+  - type: input
+    id: application-name
+    attributes:
+      label: "Application name:"
+      description: This will be a prefix to your namespace for each environment (e.g. an application name of `hello-world` will have the namespace `hello-world-dev` for the dev environment). Please use lowercase letters and hyphens only.
+      placeholder: "hello-world"
+    validations:
+      required: true
+      custom:
+        regex: "[^a-z\\-]"
+        message: "Please use lowercase letters and hyphens only."
+  - type: input
+    id: ad-group
+    attributes:
+      label: "AD group:"
+      description: Add an AD group (from Group Manager) that you would like to have admin access over the application namespaces.
+      placeholder: "placeholder_name"
+    validations:
+      required: true
+  - type: input
+    id: github-team
+    attributes:
+      label: "GitHub team:"
+      description: "Add a GitHub team to be assigned as a reviewer to any PRs to your application. Please ensure the format is `@<org>/<team>`)."
+      placeholder: "path"
+    validations:
+      required: true
+      isGitHubTeam: true
+  - type: checkboxes
+    id: auto-merge-version-bumps
+    attributes:
+      label: "Auto-merge PRs?"
+      description: "Pull requests to your application directory (apps/app-name) will automatically get merged in this repository when all checks pass."
+      options:
+        - label: "Enable auto-merge for PRs"
